@@ -1,0 +1,25 @@
+# this is a color project for Interactive Assignment Week 2
+# create lists to pull from for colors
+primary_color_list = ('red', 'yellow','blue')
+secondary_color_list = ('Orange', 'Purple', 'Green')
+# gathers input from user
+color1 = input("Enter a primary color:")
+if color1 in primary_color_list:
+    color2 = input("Enter a second primary color:")
+else:
+    print("Error: Not a primary color")
+# outputs the secondary color
+if color1 == primary_color_list[0] and color2 == primary_color_list[2]:
+    print("The Secondary Color is:",secondary_color_list[1])
+elif color1 == primary_color_list[2] and color2 == primary_color_list[0]:
+    print("The Secondary Color is:", secondary_color_list[1])
+elif color1 == primary_color_list[0] and color2 == primary_color_list[1]:
+    print("The Secondary Color is:",secondary_color_list[0])
+elif color1 == primary_color_list[1] and color2 == primary_color_list[0]:
+    print("The Secondary Color is:", secondary_color_list[0])
+elif color1 == primary_color_list[1] and color2 == primary_color_list[2]:
+    print("The Secondary Color is:",secondary_color_list[2])
+elif color1 == primary_color_list[2] and color2 == primary_color_list[1]:
+    print("The Secondary Color is:", secondary_color_list[2])
+else:
+    print("Error: Not a Valid Combination")
